@@ -753,7 +753,7 @@ add `const` before the list literal:
 <?code-excerpt "misc/lib/language_tour/built_in_types.dart (const-list)"?>
 ```dart
 var constantList = const [1, 2, 3];
-// constantList[1] = 1; // Uncommenting this causes an error.
+// constantList[1] = 1; // This line will cause an error.
 ```
 
 <a id="spread-operator"> </a>
@@ -900,7 +900,7 @@ final constantSet = const {
   'iodine',
   'astatine',
 };
-// constantSet.add('helium'); // Uncommenting this causes an error.
+// constantSet.add('helium'); // This line will cause an error.
 ```
 
 As of Dart 2.3, sets support spread operators (`...` and `...?`)
@@ -1012,7 +1012,7 @@ final constantMap = const {
   18: 'argon',
 };
 
-// constantMap[2] = 'Helium'; // Uncommenting this causes an error.
+// constantMap[2] = 'Helium'; // This line will cause an error.
 ```
 
 As of Dart 2.3, maps support spread operators (`...` and `...?`)
@@ -2529,11 +2529,8 @@ Use a dot (`.`) to refer to an instance variable or method:
 ```dart
 var p = Point(2, 2);
 
-// Set the value of the instance variable y.
-p.y = 3;
-
 // Get the value of y.
-assert(p.y == 3);
+assert(p.y == 2);
 
 // Invoke distanceTo() on p.
 double distance = p.distanceTo(Point(4, 4));
@@ -2549,8 +2546,8 @@ https://gist.github.com/0cb25997742ed5382e4a
 
 <?code-excerpt "misc/test/language_tour/classes_test.dart (safe-member-access)"?>
 ```dart
-// If p is non-null, set its y value to 4.
-p?.y = 4;
+// If p is non-null, set a variable equal to its y value.
+var a = p?.y;
 ```
 
 
