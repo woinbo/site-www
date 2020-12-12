@@ -48,7 +48,7 @@ The following table shows which commands you can use with the `dart` tool.
 | Command | Example of use                 | More information                  |
 |---------|--------------------------------|-----------------------------------|
 | analyze | `dart analyze`     | Analyzes the project's Dart source code.<br>Use instead of [`dartanalyzer`][]. |
-| compile | `dart compile exe <DART_FILE>` | Compiles Dart to various formats.<br>Use instead of [`dart2js`][] and [`dart2native`][]. | 
+| compile | `dart compile exe <DART_FILE>` | Compiles Dart to various formats.<br>Use instead of [`dart2js`][] and `dart2native`. | 
 | create  | `dart create <DIRECTORY>`      | Creates a new project.<br>Use instead of [`stagehand`.][] | 
 | format  | `dart format <DIRECTORY|DART_FILE>` | Formats Dart source code.<br>Use instead of [`dartfmt`][]. | 
 | pub     | `dart pub <PUB_COMMAND>`       | Works with packages.<br>Use instead of [`pub`][]. | 
@@ -63,7 +63,6 @@ You can also get details on `pub` commands — for example,
 `dart help pub outdated`.
 
 [`dart2js`]: /tools/dart2js
-[`dart2native`]: /tools/dart2native
 [`dartanalyzer`]: /tools/dartanalyzer
 [`dartaotruntime`]: /tools/dartaotruntime
 [`dartdevc`]: /tools/dartdevc

@@ -164,18 +164,11 @@ The following tools support developing or running
 command-line apps and servers:
 
 [`dart`](/tools/dart-vm)
-: The standalone Dart VM, which you can use to execute Dart code.
-  IDEs that support Dart,
-  and some of the pub commands, use this
-  command behind-the-scenes to execute Dart scripts.
-  Note that you must configure your IDE with the location of
+: The command-line interface to the Dart SDK,
+  with functionality that includes
+  analyzing, formatting, compiling, testing, and running Dart code.
+  You must configure your IDE with the location of
   the `dart` binary.
-
-[`dart2native`](/tools/dart2native)
-: An ahead-of-time (AOT) compiler that compiles
-  Dart code to native x64 machine code.
-  The output is either a standalone executable (the default)
-  or an AOT snapshot.
 
 [`dartaotruntime`](/tools/dartaotruntime)
 : A Dart runtime that you can use to run AOT snapshots.
