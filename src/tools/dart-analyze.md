@@ -12,12 +12,18 @@ Here's an example of performing static analysis over all the Dart files
 under the current directory:
 
 ```terminal
-$ dart analyze .
+$ dart analyze
 ```
 
-You can customize the analysis using an analysis options file
-or special comments in Dart source code.
-For details, see [Customizing static analysis][static analysis].
+You can add a directory argument:
+
+```terminal
+$ dart analyze bin
+```
+
+To customize the analysis, use an analysis options file
+or special comments in Dart source code,
+as described in [Customizing static analysis][static analysis].
 
 For information on command-line options, use the `--help` flag:
 
