@@ -22,7 +22,7 @@ Future writeAnalyzerResultsFile(Directory directory) async {
   await Process.run('dart', ['pub', 'get'], workingDirectory: directory.path);
   print('Running "dart analyze" in ${directory.path}');
 
-  // TODO @johnpryan: After dart CLI ships in stable, use dart analyze for all channels.
+  // TODO @johnpryan: After dart CLI ships in stable, use dart analyze for all channels. #2860
   var output;
   if (channel == 'stable') {
     output = await Process.run('dartanalyzer', ['.'],
